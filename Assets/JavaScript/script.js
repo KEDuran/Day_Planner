@@ -19,5 +19,8 @@ $("#currentDay").text(day.format("dddd MMMM Do YYYY"));
 
 // Created a for-loop to iterate through the businessHRs array.
 for (var i = 0; i < businessHRs.length; i++) {
+	/* This targets the timeInterval ID and concatenates var i to apply a business hour to each timeblock.*/
 	$("#timeInterval" + i).text(businessHRs[i]);
 }
+
+function saveToDo() {}
