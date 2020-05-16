@@ -42,11 +42,13 @@ for (var i = 0; i < 10; i++) {
 		comment entry per timeblock to save after a refresh once the save button per timeblock is clicked.*/
 		localStorage.setItem("toDoItems", JSON.stringify(toDoItems));
 	});
+	/* This JQuery selector statement targets each timeblock's text area and will populate the to do item in the toDoItems 
+	array with a matching index value.*/
 	$("#comment" + i).val(toDoItems[i]);
 }
 
-/* The retain() function is parsing out the toDoItems items that are saved in local storage and reassigning them back to the associated timeblock, which ensures that the 
-saved toDoItems populate after the a page refresh. */
+/* The retain() function is parsing out the toDoItems items that are saved in local storage and reassigning them back to the 
+associated timeblock, which ensures that the saved toDoItems populate after the a page refresh. */
 function retain() {
 	var storedtoDoItems = JSON.parse(localStorage.getItem("toDoItems"));
 	if (storedtoDoItems !== null) {
