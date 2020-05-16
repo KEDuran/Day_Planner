@@ -23,4 +23,5 @@ for (var i = 0; i < businessHRs.length; i++) {
 	$("#timeInterval" + i).text(businessHRs[i]);
 }
 
-function saveToDo() {}
+// This function will let users save entry items in local storage.
+function saveToDos() {}
