@@ -17,11 +17,16 @@ var businessHRs = [
 // Used JQuery to target the <p> tag in the jumbortron header to include a dynamic date.
 $("#currentDay").text(day.format("dddd MMMM Do YYYY"));
 
-// Created a for-loop to iterate through the businessHRs array.
-for (var i = 0; i < businessHRs.length; i++) {
-	/* This targets the timeInterval ID and concatenates var i to apply a business hour to each timeblock.*/
-	$("#timeInterval" + i).text(businessHRs[i]);
+// This function will let users save entry items in local storage.
+function saveToDos(buttonIndex) {
+	var items = $("#comment" + buttonIndex).text();
+	console.log(items);
 }
 
-// This function will let users save entry items in local storage.
-function saveToDos() {}
+// Created a for-loop to iterate through the businessHRs array variable and bind the click event handler to each save button.
+for (var i = 0; i < businessHRs.length; i++) {
+	// This targets the timeInterval ID and concatenates var i to apply a business hour to each timeblock.
+	$("#timeInterval" + i).text(businessHRs[i]);
+	// This binds the click event handler to each save button once the saveToDos() function is invoked.
+	$("#button" + i).click(saveToDos(i));
+}
