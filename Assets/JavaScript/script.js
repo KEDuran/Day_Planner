@@ -16,6 +16,9 @@ var businessHRs = [
 // Global variable to store text area comments.
 var toDoItems = ["", "", "", "", "", "", "", "", "", ""];
 
+// Invoking the retain() function here to make sure all saved toDoItems populate upon a page refresh.
+retain();
+
 // Used JQuery to target the <p> tag in the jumbortron header to include a dynamic date.
 $("#currentDay").text(day.format("dddd, MMMM Do YYYY"));
 
@@ -39,4 +42,14 @@ for (var i = 0; i < 10; i++) {
 		comment entry per timeblock to save after a refresh once the save button per timeblock is clicked.*/
 		localStorage.setItem("toDoItems", JSON.stringify(toDoItems));
 	});
+	$("#comment" + i).val(toDoItems[i]);
+}
+
+/* The retain() function is parsing out the toDoItems items that are saved in local storage and reassigning them back to the associated timeblock, which ensures that the 
+saved toDoItems populate after the a page refresh. */
+function retain() {
+	var storedtoDoItems = JSON.parse(localStorage.getItem("toDoItems"));
+	if (storedtoDoItems !== null) {
+		toDoItems = storedtoDoItems;
+	}
 }
