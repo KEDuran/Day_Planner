@@ -19,5 +19,5 @@ $("#currentDay").text(day.format("dddd MMMM Do YYYY"));
 
 // Created a for-loop to iterate through the businessHRs array.
 for (var i = 0; i < businessHRs.length; i++) {
-	$("#timeInterval").text(businessHRs[i]);
+	$("#timeInterval" + i).text(businessHRs[i]);
 }
