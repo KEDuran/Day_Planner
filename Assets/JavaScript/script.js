@@ -16,3 +16,8 @@ var businessHRs = [
 
 // Used JQuery to target the <p> tag in the jumbortron header to include a dynamic date.
 $("#currentDay").text(day.format("dddd MMMM Do YYYY"));
+
+// Created a for-loop to iterate through the businessHRs array.
+for (var i = 0; i < businessHRs.length; i++) {
+	$("#timeInterval").text(businessHRs[i]);
+}
