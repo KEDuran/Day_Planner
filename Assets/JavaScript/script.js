@@ -20,6 +20,8 @@ for (var i = 0; i < 10; i++) {
 
 	if (m.isAfter(businessHRs[i])) {
 		$("#comment" + i).addClass("past");
+	} else if (m.isBetween(businessHRs[i], moment({ hour: i + 9 }))) {
+		$("#comment" + i).addClass("present");
 	}
 
 	// In this in line, I am targetting the button ID to the following anonymous function.
