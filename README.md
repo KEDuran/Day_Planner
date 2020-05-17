@@ -14,4 +14,4 @@ Repo for Homework Assignment 5 - Work Day Scheduler
 
 I included a screenshot of my day scheduler app below. Please note that this image was taken at a specific time, so due to dynamic nature of moment.js, the coloration of the textarea elements in the app may identically match the image included in this README.md file.
 
-[Day Scheduler App](./Assets/Images/screenshot_DaySchedulerApp.png)
+![Day Scheduler App](./Assets/Images/screenshot_DaySchedulerApp.png)
