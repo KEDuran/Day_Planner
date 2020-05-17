@@ -1,4 +1,4 @@
-# Homework Assignment 5 - Work Day Scheduler
+# Homework Assignment 5 - Work Day Scheduler App
 
 The purpose of this homework assignment was to create a simple calendar application that would allow a user to save events for each hour throughout a traditional business day. For this assignment, I set a traditional business day to run between 8am through 5pm.
 
