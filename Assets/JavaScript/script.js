@@ -20,7 +20,9 @@ for (var i = 0; i < 10; i++) {
 
 	if (m.isAfter(businessHRs[i])) {
 		$("#comment" + i).addClass("past");
-	} else if (m.isBetween(businessHRs[i], moment({ hour: i + 9 }))) {
+	} else if (
+		m.isBetween(businessHRs[i], moment({ hour: i + 9 }), undefined, "[]")
+	) {
 		$("#comment" + i).addClass("present");
 	} else {
 		$("#comment" + i).addClass("future");
