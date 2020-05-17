@@ -45,7 +45,7 @@ WHEN I refresh the page
 THEN the saved events persist
 ```
 
-## Sample Screenshot of My Day Scheduler App
+## Sample Screenshot of My Work Day Scheduler App
 
 In this section, I included a screenshot of my day scheduler app below. The screenshot include test text entries to demonstrate the functionality of the text area elements.
 
