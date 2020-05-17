@@ -17,6 +17,11 @@ for (var i = 0; i < 10; i++) {
 	businessHRs.push(moment({ hour: i + 8 }));
 	// This targets the timeInterval ID to apply a business hour to each timeblock.
 	$("#timeInterval" + i).text(businessHRs[i].format("hA"));
+
+	if (m.isAfter(businessHRs[i])) {
+		$("#comment" + i).addClass("past");
+	}
+
 	// In this in line, I am targetting the button ID to the following anonymous function.
 	$("#button" + i).click(function () {
 		//This variable targets the assigned value for each button.
