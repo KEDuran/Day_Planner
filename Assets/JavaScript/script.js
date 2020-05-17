@@ -1,18 +1,7 @@
 // Global variable set to get the current date at time.
-var day = moment();
+var m = moment();
 // Global variable that has total number of business hours per day.
-var businessHRs = [
-	"8AM",
-	"9AM",
-	"10AM",
-	"11AM",
-	"12PM",
-	"1PM",
-	"2PM",
-	"3PM",
-	"4PM",
-	"5PM",
-];
+var businessHRs = [];
 // Global variable to store text area comments.
 var toDoItems = ["", "", "", "", "", "", "", "", "", ""];
 
@@ -20,15 +9,14 @@ var toDoItems = ["", "", "", "", "", "", "", "", "", ""];
 retain();
 
 // Used JQuery to target the <p> tag in the jumbortron header to include a dynamic date.
-$("#currentDay").text(day.format("dddd, MMMM Do YYYY"));
+$("#currentDay").text(m.format("dddd, MMMM Do YYYY"));
 
-// Created a for-loop to iterate through the businessHRs array variable.
-for (var i = 0; i < businessHRs.length; i++) {
-	// This targets the timeInterval ID and concatenates var i to apply a business hour to each timeblock.
-	$("#timeInterval" + i).text(businessHRs[i]);
-}
-// Created a for-loop to bind the comment text areas with the save button for each business hour.
+// Created a for-loop to add moment objects to businessHRs array and bind the comment text areas with the save button for each business hour.
 for (var i = 0; i < 10; i++) {
+	// Adds a new moment object to the businessHRs array to include a 8am - 5pm business day.
+	businessHRs.push(moment({ hour: i + 8 }));
+	// This targets the timeInterval ID to apply a business hour to each timeblock.
+	$("#timeInterval" + i).text(businessHRs[i].format("hA"));
 	// In this in line, I am targetting the button ID to the following anonymous function.
 	$("#button" + i).click(function () {
 		//This variable targets the assigned value for each button.
@@ -42,6 +30,7 @@ for (var i = 0; i < 10; i++) {
 		comment entry per timeblock to save after a refresh once the save button per timeblock is clicked.*/
 		localStorage.setItem("toDoItems", JSON.stringify(toDoItems));
 	});
+
 	/* This JQuery selector statement targets each timeblock's text area and will populate the to do item in the toDoItems 
 	array with a matching index value.*/
 	$("#comment" + i).val(toDoItems[i]);
