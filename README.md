@@ -1,14 +1,14 @@
 # Homework Assignment 5 - Work Day Scheduler
 
-The purpose of this homework assignment was to create a simple calendar application that would allow a user to save events by the hour throughout a traditional business day. For this assignment, I set a work day to run between 8am through 5pm.
+The purpose of this homework assignment was to create a simple calendar application that would allow a user to save events for each hour throughout a traditional business day. For this assignment, I set a traditional business day to run between 8am through 5pm.
 
-As specified in the homework assignment's instructions, the calendar application must:
+As specified in this homework assignment's instructions, the calendar application must:
 
 - Run in the browser with a responsive layout.
 - Feature dynamically updated HTML and CSS powered by JQuery.
 - Use the [Moment.js](https://momentjs.com/) library within the browser.
 
-## Links to Work Day Scheduler App and GitHub Repo
+## Links to My Work Day Scheduler App and GitHub Repo
 
 In the content below, I included links to (a) my work day scheduler app and (b) the associated GitHub repo that I used to develop this calendar app.
 
@@ -17,7 +17,7 @@ In the content below, I included links to (a) my work day scheduler app and (b) 
 
 ## Assignment Scope
 
-In this section, I included the specific user story and acceptance criteria that was included in the homework instructions.
+In this section, I included the specific user story and acceptance criteria that was included in this homework assignment's instructions.
 
 ### User Story from Homework Instructions
 
@@ -47,6 +47,8 @@ THEN the saved events persist
 
 ## Sample Screenshot of My Day Scheduler App
 
-I included a screenshot of my day scheduler app below. Please note that this image was taken at a specific time, so due to dynamic nature of moment.js, the coloration of the textarea elements in the app may identically match the image included in this README.md file.
+I included a screenshot of my day scheduler app below.
+
+- **PLEASE NOTE** - This image was taken at a specific time, so due to dynamic nature of moment.js, the coloration of the textarea elements in the app may not identically match the sample image included below. \*
 
 ![Day Scheduler App](./Assets/Images/screenshot_DaySchedulerApp.png)
