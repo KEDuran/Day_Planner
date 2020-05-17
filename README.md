@@ -1,4 +1,4 @@
-# Homework Assignment 5 - Day Scheduler App
+# Homework Assignment 5 - Work Day Scheduler
 
 Repo for Homework Assignment 5 - Work Day Scheduler
 
