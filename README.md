@@ -47,8 +47,8 @@ THEN the saved events persist
 
 ## Sample Screenshot of My Day Scheduler App
 
-I included a screenshot of my day scheduler app below.
+In this section, I included a screenshot of my day scheduler app below. The screenshot include test text entries to demonstrate the functionality of the text area elements.
 
-- **PLEASE NOTE** - This image was taken at a specific time, so due to dynamic nature of moment.js, the coloration of the textarea elements in the app may not identically match the sample image included below. \*
+- **PLEASE NOTE** - This image was taken at a specific time. Due to both dynamic nature of moment.js and whenever this application is opened for grading, the coloration of the textarea elements in the app may not match the sample image included below.
 
 ![Day Scheduler App](./Assets/Images/screenshot_DaySchedulerApp.png)
