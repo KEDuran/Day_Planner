@@ -19,7 +19,7 @@ In the content below, I included links to (a) my work day scheduler app and (b) 
 
 In this section, I included the specific user story and acceptance criteria that was included in this homework assignment's instructions.
 
-### User Story from Homework Instructions
+### User Story from Homework Assignment Instructions
 
 ```
 AS AN employee with a busy schedule
@@ -27,7 +27,7 @@ I WANT to add important events to a daily planner
 SO THAT I can manage my time effectively
 ```
 
-### Acceptance Criteria from Homework Instructions
+### Acceptance Criteria from Homework Assignment Instructions
 
 ```
 GIVEN I am using a daily planner to create a schedule
