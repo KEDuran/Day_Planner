@@ -39,9 +39,17 @@ textarea {
 	color: black;
 }
 
+.past:focus {
+	background-color: #d3d3d3;
+}
+
 .present {
 	background-color: #ff6961;
 	color: black;
+}
+
+.present:focus {
+	background-color: #ff6961;
 }
 
 .future {
@@ -49,6 +57,9 @@ textarea {
 	color: black;
 }
 
+.future:focus {
+	background-color: #77dd77;
+}
 .saveBtn {
 	border-left: 1px solid black;
 	border-top-right-radius: 15px;
@@ -57,7 +68,7 @@ textarea {
 	color: white;
 }
 
-.saveBtn i:hover {
+.saveBtn:hover {
 	font-size: 20px;
 	transition: all 0.3s ease-in-out;
 }

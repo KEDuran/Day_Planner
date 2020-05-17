@@ -1,5 +1,5 @@
 // Global variable set to retreive the current date the day planner app is opened.
-var m = moment();
+var m = moment({ hour: 10 });
 /* Global variable with an empty array that will allow the business hours populated in the for-loop below to 
 be pushed into this businesHrs array variable.*/
 var businessHRs = [];
