@@ -22,16 +22,14 @@ for (var i = 0; i < 10; i++) {
 
 	/* This if statement adds the coloration for past, present, and future business hours based on the time 
 	assigned to each timeblock.*/
-	// Applies the past class CSS selector where applicable by using .isAfter() moment.js function.
-	if (m.isAfter(businessHRs[i])) {
-		$("#comment" + i).addClass("past");
-	} else if (
-		// Applies the present class CSS selector where applicable by using .isBetween() moment.js function.
-		m.isBetween(businessHRs[i], moment({ hours: i + 9 }), undefined, "[]")
-	) {
+	// Applies the present class CSS selector where applicable by using .isBetween() moment.js function.
+	if (m.isBetween(businessHRs[i], moment({ hours: i + 9 }), undefined, "[]")) {
 		$("#comment" + i).addClass("present");
-	} else {
+		// Applies the past class CSS selector where applicable by using .isAfter() moment.js function.
+	} else if (m.isAfter(businessHRs[i])) {
+		$("#comment" + i).addClass("past");
 		// Applies the future class CSS selector where applicable if other parameters in this statement are not met.
+	} else {
 		$("#comment" + i).addClass("future");
 	}
 
