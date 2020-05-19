@@ -16,7 +16,7 @@ $("#currentDay").text(m.format("dddd, MMMM Do YYYY"));
 save button for each business hour.*/
 for (var i = 0; i < 10; i++) {
 	// Adds a new moment object to the businessHRs array to reflect an 8am - 5pm business day.
-	businessHRs.push(moment({ hour: i + 8 }));
+	businessHRs.push(moment({ hours: i + 8 }));
 	// This targets the timeInterval ID to apply each businessHRs array index to each matching timeblock.
 	$("#timeInterval" + i).text(businessHRs[i].format("hA"));
 
@@ -27,7 +27,7 @@ for (var i = 0; i < 10; i++) {
 		$("#comment" + i).addClass("past");
 	} else if (
 		// Applies the present class CSS selector where applicable by using .isBetween() moment.js function.
-		m.isBetween(businessHRs[i], moment({ hour: i + 9 }), undefined, "[]")
+		m.isBetween(businessHRs[i], moment({ hours: i + 9 }), undefined, "[]")
 	) {
 		$("#comment" + i).addClass("present");
 	} else {
